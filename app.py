@@ -2,11 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
-@app.route('/')
+@app.route("/")
 def index():
-  return '''
-    <html>
+    return """
+   <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
@@ -38,8 +37,7 @@ def index():
         </div>
     </body>
     </html>
-    '''
+    """
 
-
-if __name__ == '__main__':
-  app.run(debug = True)
+if __name__ == "__main__":
+    app.run(debug=True)
